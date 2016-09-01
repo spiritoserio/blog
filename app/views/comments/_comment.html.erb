@@ -1,0 +1,14 @@
+
+<div class="panel panel-default">
+<div class="panel-heading"><b><h2><%= comment.name %><h2><b></div>
+<div class="panel-body">
+	<%= comment.body %>
+<br>
+<br>
+
+ <p><p><p>
+<%= link_to "delete", [comment.post, comment], method: :delete, data: {confirm: "confermi di voler cancellare questo commento?"}, class: "btn btn-default btn-xs" %>
+</p></p></p>
+	
+ 	</div>
+ </div>
